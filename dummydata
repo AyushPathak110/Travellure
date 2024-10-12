@@ -1,0 +1,182 @@
+[
+  {
+    "from": "Ahmedabad",
+    "destination": "Goa",
+    "duration": "5 Days, 4 Nights",
+    "price": 10000,
+    "description": "Enjoy the vibrant beaches, thrilling water sports, and lively nightlife of Goa. Perfect for a relaxing and fun-filled vacation.",
+    "inclusions": [
+      "Round-trip airfare",
+      "3-star hotel stay",
+      "Daily breakfast",
+      "Beach tour",
+      "Water sports activities"
+    ],
+    "exclusions": [
+      "Personal expenses",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "Baga Beach",
+      "Calangute Beach",
+      "Dudhsagar Waterfalls",
+      "Fort Aguada"
+    ],
+    "bestTimeToVisit": "January",
+    "bestSeason": "Winter",
+    "trending": true,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://images.unsplash.com/photo-1642922835816-e2ac68db5c42?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "from": "Ahmedabad",
+    "destination": "Shimla & Manali",
+    "duration": "7 Days, 6 Nights",
+    "price": 22000,
+    "description": "Experience the picturesque hill stations of Shimla and Manali with scenic views, serene landscapes, and adventure activities.",
+    "inclusions": [
+      "Round-trip transportation",
+      "4-star hotel stay",
+      "Daily breakfast",
+      "Snow adventure activities",
+      "Guided city tours"
+    ],
+    "exclusions": [
+      "Personal shopping",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "Mall Road",
+      "Christ Church",
+      "Solang Valley",
+      "Rohtang Pass"
+    ],
+    "bestTimeToVisit": "December",
+    "bestSeason": "Winter",
+    "trending": true,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://images.unsplash.com/photo-1609232530947-0aeb23338a43?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "from": "Ahmedabad",
+    "destination": "Kerala",
+    "duration": "6 Days, 5 Nights",
+    "price": 18000,
+    "description": "Explore the backwaters of Kerala, lush tea gardens, and serene beaches. A perfect mix of nature and culture.",
+    "inclusions": [
+      "Round-trip airfare",
+      "4-star hotel stay",
+      "Daily breakfast",
+      "Houseboat stay in Alleppey",
+      "Guided tour of Munnar"
+    ],
+    "exclusions": [
+      "Personal expenses",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "Alleppey Backwaters",
+      "Munnar Tea Gardens",
+      "Kumarakom Bird Sanctuary",
+      "Varkala Beach"
+    ],
+    "bestTimeToVisit": "November",
+    "bestSeason": "Winter",
+    "trending": false,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://images.unsplash.com/photo-1470123808288-1e59739dea12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVubmFyfGVufDB8fDB8fHww"
+  },
+  {
+    "from": "Ahmedabad",
+    "destination": "Udaipur and Kumbhalgarh",
+    "duration": "5 Days, 4 Nights",
+    "price": 24000,
+    "description": "Immerse yourself in the royal heritage of Rajasthan with visits to Jaipur, Udaipur, Jodhpur, and Jaisalmer.",
+    "inclusions": [
+      "Round-trip transportation",
+      "3-star hotel stay",
+      "Daily breakfast",
+      "Guided palace tours",
+      "Desert safari in Jaisalmer"
+    ],
+    "exclusions": [
+      "Entry fees to monuments",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "City Palace Udaipur",
+      "Kumbhalgarh Fort",
+      "Lake Pichola",
+      "Jaisalmer Fort"
+    ],
+    "bestTimeToVisit": "February",
+    "bestSeason": "Winter",
+    "trending": true,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://plus.unsplash.com/premium_photo-1661964079694-ccfaf7dc8028?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dWRhaXB1cnxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "from": "Ahmedabad",
+    "destination": "Andaman & Nicobar Islands",
+    "duration": "7 Days, 6 Nights",
+    "price": 36000,
+    "description": "Discover the pristine beaches and crystal-clear waters of the Andaman Islands. Ideal for beach lovers and adventure enthusiasts.",
+    "inclusions": [
+      "Round-trip airfare",
+      "4-star hotel stay",
+      "Daily breakfast",
+      "Scuba diving experience",
+      "Island hopping tour"
+    ],
+    "exclusions": [
+      "Personal expenses",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "Radhanagar Beach",
+      "Havelock Island",
+      "Neil Island",
+      "Cellular Jail"
+    ],
+    "bestTimeToVisit": "March",
+    "bestSeason": "Spring",
+    "trending": false,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://images.unsplash.com/photo-1641918575292-fa18603e7112?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kYW1hbiUyMGFuZCUyMG5pY29iYXIlMjBpc2xhbmRzfGVufDB8fDB8fHww"
+  },
+  {
+    "from": "Ahmedabad",
+    "destination": "Leh-Ladakh",
+    "duration": "6 Days, 5 Nights",
+    "price": 1800,
+    "description": "Embark on a thrilling adventure through the rugged landscapes of Leh-Ladakh. Perfect for nature and adventure lovers.",
+    "inclusions": [
+      "Round-trip transportation",
+      "3-star hotel stay",
+      "Daily breakfast",
+      "Nubra Valley tour",
+      "Pangong Lake visit"
+    ],
+    "exclusions": [
+      "Permit fees",
+      "Travel insurance",
+      "Additional meals"
+    ],
+    "placesIncludes": [
+      "Pangong Lake",
+      "Nubra Valley",
+      "Magnetic Hill",
+      "Leh Palace"
+    ],
+    "bestTimeToVisit": "July",
+    "bestSeason": "Summer",
+    "trending": true,
+    "owner": "66c09503cb4d1888e3cb5a21",
+    "image": "https://images.unsplash.com/photo-1635255506105-b74adbd94026?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFkYWtofGVufDB8fDB8fHww"
+  }
+]

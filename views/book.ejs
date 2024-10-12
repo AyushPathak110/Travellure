@@ -1,0 +1,38 @@
+<% layout("boilerplate") -%>
+    <div class="row mt-5" style="width: 100%;">
+        <div class="col-6 box" style="margin-left: 100px; padding: 50px;">
+            <h1>Book Your Trip</h1>
+            <form action="/book/<%= id %>" method="post" novalidate class="needs-validation">
+                <!-- User Information -->
+
+                <fieldset>
+                    <legend>User Information</legend>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="name">Name:</label>
+                            <input class="form-control" type="text" id="name" name="user[name]" required>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="email">Email:</label>
+                            <input class="form-control" type="email" id="email" name="user[email]" required>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="numberOfPeople">Number of People:</label>
+                            <input class="form-control" type="number" id="numberOfPeople" name="user[numberOfPeople]" required><br><br>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Travel Dates -->
+                <fieldset>
+                    <legend>Travel Dates</legend>
+                    <label class="form-label" for="startDate">Start Date:</label>
+                    <input class="form-control" type="date" id="startDate" name="travelDates[startDate]"
+                        required><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit"
+                    style="border: none; background-color: rgb(100, 100, 255); color: white; padding: 8px; border-radius: 5px;">
+            </form>
+        </div>
+    </div>

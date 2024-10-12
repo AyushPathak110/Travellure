@@ -1,0 +1,49 @@
+<% layout("boilerplate") -%>
+<div style="height: 100vh;">
+    <% if (success && success.length) { %>
+        <div class="alert alert-success alert-dismissible show" role="alert"
+            style="display: flex; justify-content: space-between;">
+            <%= success %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } %>
+            <% if (error && error.length) { %>
+                <div class="alert alert-success alert-dismissible show" role="alert"
+                    style="display: flex; justify-content: space-between;">
+                    <%= error %>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <% } %>
+        <% if(data.length){ %>
+            <% data.forEach(element=> {%>
+                <div class="listBox">
+                    <div>
+                        <%= element.name%><br>
+                        <%= element.agencyName%><br>
+                        <%= element.email %><br>
+                        <%= element.phone %><br>
+                        <%= element.address %><br>
+                        <%= element.status %> <%= element.country%><br>
+                        <%= element.licenseNumber %><br>
+                        <%= element.licenseDocument %><br>
+                        <% if(element.verified) {%> Verified <% }else{ %> Not verified <% } %> <br>
+                        <%= element.instagram %><br>
+                    </div>
+                    <div>
+                        <% if(currUser && currUser.username == "admin"){ %>
+                            <form action="/verify/<%= element.id %>?_method=PATCH" method="post" style="display: inline-block;">
+                                <button <% if(element.verified) {%> disabled <% } %>
+                                    style="border: none; margin-right:30px; background-color: rgb(100, 100, 255); color: white; padding: 8px 15px; border-radius: 5px;">Approve</button>
+                            </form>
+                            <form action="/noVerify/<%= element.id %>?_method=PATCH" method="post" style="display: inline-block;">
+                                <button <% if(!element.verified) {%> disabled <% } %>
+                                    style="border: none; margin-right:30px; background-color: rgb(100, 100, 255); color: white; padding: 8px; border-radius: 5px;">Disapprove</button>
+                            </form>
+                            <% } %>
+                    </div>
+                </div>
+                <%}); %>
+                <% } %> <% if(!data.length){ %> <h2>No requests pending</h2> <% } %> </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>

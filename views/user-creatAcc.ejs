@@ -1,0 +1,60 @@
+<% layout("boilerplate") -%>
+<% if (error && error.length) { %>
+    <div class="alert alert-success alert-dismissible show" role="alert"
+        style="display: flex; justify-content: space-between;">
+        <%= error %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+<div class="box"> 
+    <form action="/user-login/signup" method="post" novalidate class="needs-validation">
+        <div class="mb-2 element">    
+            <label class="form-label" for="Username">Enter your Username:</label>
+            <input required class="form-control" type="text" name="username">
+            <div class="invalid-feedback">Enter the username</div>
+        </div>
+        <div class="mb-2 element">    
+            <label class="form-label" for="password">Enter the password:</label>
+            <input class="form-control" type="password" name="password" required>
+            <div class="invalid-feedback">Enter the password</div>
+        </div>
+        <div class="mb-2 row">
+            <div class="col-6">
+                <label for="fname" class="form-label">First Name: </label>
+                <input required type="text" name="fname" placeholder="First Name.." class="form-control">
+                <div class="invalid-feedback">Enter the first name</div>
+            </div>
+            <div class="col-6">    
+                <label for="lname" class="form-label">Last Name: </label>
+                <input type="text" name="lname" placeholder="Last Name.." class="form-control">
+            </div>
+        </div>
+        <div class="mb-2 element">    
+            <label class="form-label" for="email">Enter the email id:</label>
+            <input class="form-control" type="email" name="email" required>
+            <div class="invalid-feedback">Enter the email</div>
+        </div>
+        <input style="border: none; background-color: rgb(100, 100, 255); color: white; padding: 8px; border-radius: 5px;" type="submit" value="submit">
+    </form>
+</div>
+
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()</script>

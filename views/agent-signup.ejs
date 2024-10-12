@@ -1,0 +1,90 @@
+<% layout("boilerplate") -%>
+<% if (error && error.length) { %>
+    <div class="alert alert-success alert-dismissible show" role="alert"
+        style="display: flex; justify-content: space-between;">
+        <%= error %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+<div class="box" style="margin-top: 4%;"> 
+    <form action="/agent-login/signup" method="post" novalidate class="needs-validation">
+        <div class="mb-2 element">    
+            <label class="form-label" for="Username">Enter your username:</label>
+            <input required class="form-control" type="text" name="username">
+        </div>
+        <div class="mb-2 element">    
+            <label class="form-label" for="password">Enter the password:</label>
+            <input class="form-control" type="password" name="password" required>
+        </div>
+        <div class="mb-2 row">
+            <div class="col-6 element">
+                <label for="name" class="form-label">Name: </label>
+                <input required type="text" name="name"  class="form-control">
+            </div>
+            <div class="col-6 element">    
+                <label for="aname" class="form-label">Agency name: </label>
+                <input required type="text" name="agencyName" class="form-control">
+            </div>
+        </div>
+        <div class="mb-2 row">
+        <div class="mb-2 element col-6">    
+            <label class="form-label" for="email">Enter the email id:</label>
+            <input class="form-control" type="email" name="email" required>
+        </div>
+        <div class="mb-2 element col-6">    
+            <label class="form-label" for="email">Enter your phone number:</label>
+            <input class="form-control" type="text" name="phone" required>
+        </div>
+        </div>
+        <div class="mb-2 element">    
+            <label class="form-label" for="email">Enter your address:</label>
+            <textarea required name="address" name="address" class="form-control" rows="2" style="resize: none;"></textarea>
+        </div>
+        <div class="mb-2 row">
+            <div class="mb-2 element col-6">    
+                <label class="form-label" for="state">Enter the state:</label>
+                <input class="form-control" type="text" name="state" required>
+            </div>
+            <div class="mb-2 element col-6">    
+                <label class="form-label" for="country">Enter the country:</label>
+                <input class="form-control" type="text" name="country" required>
+            </div>
+            </div>
+        <div class="mb-2 row">
+            <div class="mb-2 element col-6">    
+                <label class="form-label" for="state">Enter the license number:</label>
+                <input class="form-control" type="text" name="licenseNumber" required>
+            </div>
+            <div class="mb-2 element col-6">    
+                <label class="form-label" for="country">Uplode the documents of license:</label>
+                <input class="form-control" type="text" name="licenseDocument" required>
+            </div>
+        </div>
+            <div class="mb-2 element">    
+                <label class="form-label" for="insta">Instagram account's link (if any):</label>
+                <input class="form-control" type="text" name="instagram">
+            </div>
+        <input style="border: none; background-color: rgb(100, 100, 255); color: white; padding: 8px; border-radius: 5px;" type="submit" value="submit">
+    </form>
+</div>
+
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()</script>

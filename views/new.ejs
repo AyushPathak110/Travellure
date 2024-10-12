@@ -1,0 +1,75 @@
+<% layout("boilerplate") -%>
+<% if (error && error.length) { %>
+    <div class="alert alert-success alert-dismissible show" role="alert"
+        style="display: flex; justify-content: space-between;">
+        <%= error %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+<div class="row mt-5" style="width: 100%;">
+    <div class="col-6 ">
+        <form action="/new" method="post" novalidate class="needs-validation">
+            <div class="row">
+                <div class="col-4">
+                    <label for="from" class="form-label">From: </label>
+                    <input type="text" name="from" required class="form-control">
+                </div>
+                <div class="col-4">    
+                    <label for="destination" class="form-label">Destination: </label>
+                    <input required type="text" name="destination" class="form-control">
+                </div>
+                <div class="col-4">    
+                    <label for="price" class="form-label">Price: </label>
+                    <input required type="number" name="price" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2 element">    
+                <label class="form-label" for="description">Enter a description:</label>
+                <textarea required name="description" class="form-control" rows="2" style="resize: none;"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="inclusions" class="form-label">Inclusions: </label>
+                    <input type="text" name="inclusions" required placeholder="Separate the keywords using commas." class="form-control">
+                </div>
+                <div class="col-6">
+                    <label for="exclusions" class="form-label">Exclusions: </label>
+                    <input type="text" name="exclusions" required placeholder="Separate the keywords using commas." class="form-control">
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <label for="duration" class="form-label">Duration of the trip: </label>
+                <input type="text" name="duration" required placeholder="Number of days and night.."  class="form-control">
+            </div>
+            <div class="col-12 mt-2">
+                <label for="places" class="form-label">Places included in the trip: </label>
+                <input type="text" name="placesIncludes" required placeholder="Separate the keywords using commas."  class="form-control">
+            </div>
+            <div class="col-12 mt-2">
+                <label for="image" class="form-label">You can upload the image here: </label>
+                <input type="url" name="image" required class="form-control">
+            </div>
+            <input type="submit" value="Submit" style="border: none; background-color: rgb(100, 100, 255); color: white; margin: 15px; padding: 8px; border-radius: 5px;">
+        </form>
+    </div>
+    </div>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()</script>

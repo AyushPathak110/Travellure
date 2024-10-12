@@ -1,0 +1,46 @@
+<div class="details">
+    <div class="card mb-4">
+    <div class=" card-header">
+        About
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            <%= data.description %> Your journey will be starting from <%= data.from %>. People generelly prefer to take this trip during month of <%= data.bestTimeToVisit %>, so we recommend you do it in <%=
+            data.bestTimeToVisit %> as well. Though the decision it totally subjective. The price includes GST as well.
+        </p>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        Inclusions
+    </div>
+    <div class="card-body">
+        <ul style="padding: 0px 20px;">
+            <p class="card-text">
+                <% data.inclusions.forEach(element=> { %>
+                    <li class="dot">
+                        <%= element %>
+                    </li>
+                    <% }); %>
+        </ul>
+        </p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Exclusions
+    </div>
+    <div class="card-body">
+        <ul style="padding: 0px 20px;">
+            <p class="card-text">
+                <% data.exclusions.forEach(element=> { %>
+                    <li class="dot">
+                        <%= element %>
+                    </li>
+                    <% }); %>
+        </ul>
+        </p>
+    </div>
+</div>
+
+</div>

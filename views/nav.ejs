@@ -1,0 +1,32 @@
+<nav>
+    <ul class="flex-navi">
+        <a href="/" style="text-decoration: none;">
+            <div class="flex-nav-right title">
+                <li><img class="logo" src="/icons/logo.svg" alt="logo"></li>
+                <li class="li-name">Travellure</li>
+            </div>
+        </a>
+        <div class="flex-nav-right">
+            <li class="li-it"><a class="anchor" href="/">Home</a></li>
+            <% if(currUser && currUser.verified) {%>
+            <li class="li-it"><a class="anchor" href="/book/view/requests">Booking Requests</a></li>
+            <% } %>
+            <% if(currUser && currUser.verified) {%>
+            <li class="li-it"><a class="anchor" href="/book/view/done">Confirmed Bookings</a></li>
+            <% } %>
+            <% if(currUser && currUser.verified) {%>
+            <li class="li-it"><a class="anchor" href="/new">Add a Package</a></li>
+            <% } %>
+            <% if(currUser && currUser.username == "admin") {%>
+            <li class="li-it"><a class="anchor" href="/verify">Manage agents</a></li>
+            <% } %>
+            <%if(!currUser){%>
+                <li class="li-it"><a class="anchor" href="/agent-login">Agent Login</a></li>
+                <li class="li-it spe"><a class="anchor" href="/user-login">User Login</a></li>
+                <%}%>
+                <%if(currUser){%>
+                <li class="li-it spe"><a class="anchor" href="/user-login/logout">Logout</a></li>
+                <% } %>
+        </div>
+    </ul>
+</nav>
